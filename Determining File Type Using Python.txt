@@ -1,0 +1,7 @@
+//python magic is used to determine file type//
+
+import magic
+m= magic.open(magic.MAGIC_NONE)
+m.load()
+ftype = m.file(r'YOURFILE.EXE')
+print ftype
